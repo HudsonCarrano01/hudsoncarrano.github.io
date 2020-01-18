@@ -57,6 +57,22 @@ footer {
     box-sizing: border-box;
     padding: 1rem;
     margin: 1rem;
-    width: 43%;
+    width: 50%;
 }
+
+@media (max-width: 1232px) {
+    body {
+        width: 50%;
+    }
+  }
+  @media (max-width: 740px) {
+    body {
+        width: 75%;
+    }
+  }
+  @media (max-width: 575px) {
+    body {
+        width: 90%;
+    }
+  }
 
