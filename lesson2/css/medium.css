@@ -1,0 +1,38 @@
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    header {
+        border-radius: 10px;
+    }
+    header div img{
+        box-shadow:  4px 4px 20px gray;
+        float: right;
+        border-radius: 0 10px 0 0;
+    }
+    section {
+        padding: 0.75rem;
+        margin : 0 auto;
+        max-width : 45rem;
+    }
+    footer {
+        border-radius: 10px;
+    }
+    .img-section {
+        width: 250px;
+    }
+    .center{
+        margin: 0 auto;
+        padding-left: 30%;
+    }
+    
+    
+}
+@media only screen and (max-width: 800px) {
+    .img-section {
+        width: 200px;
+    }
+}
