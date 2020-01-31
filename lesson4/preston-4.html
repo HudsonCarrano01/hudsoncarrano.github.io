@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body>
+        <header>
+            <div>          
+                <img id='logo' src='./images/logo.png' alt='logo'>
+            </div>
+            <div>
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='#'>Home</a> </li>
+                <li class="active"><a href='Preston-4.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='#'>Storm Center</a> </li>
+                <li><a href='#'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div>
+                <h2 class="center">Preston Town City</h2>
+                <hr>
+            </div>
+            <section class="summary">
+                <div class="leftcol-1">
+                    <div >
+                        <h3>Preston Town</h3>
+                        <picture>
+                            <img src="images/01-nublado.png" alt="Partly cloudy day">
+                        </picture>
+                        <div class="p-data">
+                            <p>High: 34&deg;F/1&deg;C</p>
+                            <p>Low: 27&deg;F/-3&deg;C</p>
+                            <p>Precipitation: 27&percnt;</p>
+                            <p>Wind Speed: 0.86 m/s SSE</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="rightcol-1">
+                    <img class="sumary-img" src="images/preston-02.jpg" alt="Today weather in Preston" >
+                </div>
+            </section>
+            <section class="forecast">
+				<div class="grid-title"><h3>7 Day Forecast</h3></div>
+                <div class="forecast-grid">
+                    <div class="day">Thu<br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day">Fri<br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day">Sat<br><img src="images/02-chuva.png" alt="Rain day"></div>
+                    <div class="day">Sun<br><img src="images/02-chuva.png" alt="Sunny day"></div>
+                    <div class="day">Mon<br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day">Tue<br><img src="images/01-neve.png" alt="Snow day"></div>
+                    <div class="day">Wed<br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                </div>
+                <div class="degrees">
+                    <div class="deg">34&deg;F<br>1&deg;C</div>
+                    <div class="deg">32&deg;F<br>0&deg;C</div>
+                    <div class="deg">37&deg;F<br>3&deg;C</div>
+                    <div class="deg">39&deg;F<br>4&deg;C</div>
+                    <div class="deg">25&deg;F<br>-4&deg;C</div>
+                    <div class="deg">21&deg;F<br>-6&deg;C</div>
+                    <div class="deg">25&deg;F<br>-4&deg;C</div>
+                </div>
+            </section>
+            <article class="site-article">
+                <hr>
+                <h3>Preston Breaks Record</h3>
+                <p class="town-article">
+                    <img class="article-img" src="images/preston-03.jpg" alt="Preston city">
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                </p>
+            </article>
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="./js/general.js"></script> 
+    </body>
+</html>

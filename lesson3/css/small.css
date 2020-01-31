@@ -62,6 +62,7 @@ header div img{
     border-width: 2px;
     border-radius: 3px;
 }
+
 header nav ul {
     list-style-type: none;
     margin: 0;
@@ -137,6 +138,9 @@ td p, th p {
     font-size: 12px;
 }
 
+.center{
+    text-align: center !important;
+}
 
 
 
