@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body>
+        <div id="banner" class="banner">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+        </div>
+        <header>
+            <div>          
+                <img id='logo' src='./images/logo.png' alt='logo'>
+            </div>
+            <div>
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='#'>Home</a> </li>
+                <li class="active"><a href='Preston-4.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='#'>Storm Center</a> </li>
+                <li><a href='#'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div>
+                <h2 class="center">Preston Town City</h2>
+                <hr>
+            </div>
+            <section class="content">
+                <div class="summary" >
+                    <img class="summary-img" src="images/city05.jpg" alt="Today weather in Preston" >
+                </div>
+                <div class="">
+                    <div >
+                        <div class="p-data">
+                           <h4> Summary Weather </h4>
+        <!--                    <picture>
+                                <img src="images/01-nublado.png" alt="Partly cloudy day">
+                            </picture>
+        -->
+                            <p><span>Currentely:</span> Partly cloudy</p>
+                            <p><span>High:</span> 34&deg;F/1&deg;C</p>
+                            <p><span>Wind Chill:</span> 27&deg;F/-3&deg;C</p>
+                            <p><span>Humodity:</span> 27&percnt;</p>
+                            <p><span>Wind Speed:</span> 0.86 mph SSE</p>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="forecast">
+				<div class="grid-title"><h3>5 Day Forecast</h3></div>
+                <div class="forecast-grid">
+                    <div class="day"><span id="d1">Thu</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day"><span id="d2">Fri</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day"><span id="d3">Sat</span><br><img src="images/02-chuva.png" alt="Rain day"></div>
+                    <div class="day"><span id="d4">Sun</span><br><img src="images/02-chuva.png" alt="Sunny day"></div>
+                    <div class="day"><span id="d5">Mon</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                </div>
+                <div class="degrees">
+                    <div class="deg">34&deg;F<br>1&deg;C</div>
+                    <div class="deg">32&deg;F<br>0&deg;C</div>
+                    <div class="deg">37&deg;F<br>3&deg;C</div>
+                    <div class="deg">39&deg;F<br>4&deg;C</div>
+                    <div class="deg">25&deg;F<br>-4&deg;C</div>
+                </div>
+            </section>
+            <article class="site-article">
+                <hr>
+                <h3>Preston Breaks Record</h3>
+                <p class="town-article">
+                    <img class="article-img" src="images/preston-03.jpg" alt="Preston city">
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                </p>
+            </article>
+            <hr>
+            <section class="contact">
+                <div class="summary">
+                    <div class="leftcol-1">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3884.3512149239828!2d-111.875773!3d42.0970234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263%2C%20EUA!5e1!3m2!1spt-BR!2sbr!4v1581157391451!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                
+                
+                    <div class="rightcol-1">
+                        <h4>The Weather Site</h4>
+                        <p><img src='images/maps-and-flags.png' width='16px'>30 N 1st E</p>
+                        <p>Preston, ID 83263</p>
+                        <p>&nbsp; </p>
+                        <p><img src='images/telephone.png' width='16px'>999-999-9999</p>
+                        <p><img src='images/email.png' width='16px'>theweathersite@tws.com</p>
+                        <p>&nbsp; </p>
+                        <p>
+                           <a href="#" alt="facebook"><img src='images/facebook.png' width='50px'></a>
+                           <a href="#" alt="facebook"><img src='images/instagram.png' width='50px'></a>
+                           <a href="#" alt="facebook"><img src='images/youtube.png' width='50px'></a>
+                           <a href="#" alt="facebook"><img src='images/twitter.png' width='50px'></a>
+                           <a href="#" alt="facebook"><img src='images/google-plus.png' width='50px'></a>
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="./js/general.js"></script> 
+    </body>
+</html>

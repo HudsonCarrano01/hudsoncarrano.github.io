@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1280px) {
+  /*--------------- SECTION ---------------*/
+  .day {
+      height: 148px;
+      font-size: 25px;
+  }
+  .deg {
+      font-size: 25px;
+  }
+  .summary-img {
+    width: 100%;
+    height: auto;
+  }
+}
