@@ -21,10 +21,19 @@
             <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
         </div>
         <header>
-            <div>          
+            <picture>
+                <source srcset="images/logosmall.png"
+                        media="(max-width: 399px)">
+                <source srcset="images/logomedium.png"
+                        media="(min-width: 400px) and (max-width: 1279px)">
+                <source srcset="images/logolarge.png"
+                        media="(min-width: 1280px)">
+                <img src="images/logo.png" alt="Logo" >
+            </picture>
+<!--            <div>          
                 <img id='logo' src='./images/logo.png' alt='logo'>
             </div>
-            <div>
+ -->           <div class="header-div">
                 <h1>The Weather Site</h1>
             </div>    
         </header>

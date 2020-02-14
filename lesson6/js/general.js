@@ -1,4 +1,4 @@
-
+window.onload = function() {
 
 // Data sumary Preston City
 var p_currently = 'Rainy';
@@ -46,7 +46,7 @@ document.getElementById("d5").innerHTML = dw[dd];
 let update = document.lastModified;
 document.getElementById("lastupdate").innerHTML = update;
 
-
+}
 
 // Function to use in nav menu
 function toggleMenu() {

@@ -1,5 +1,8 @@
 @media only screen and (min-width: 1280px) {
   /*--------------- SECTION ---------------*/
+  h1 {
+    font-size: 50px;
+  }
   .day {
       height: 148px;
       font-size: 25px;
