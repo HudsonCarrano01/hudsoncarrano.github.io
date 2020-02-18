@@ -1,3 +1,13 @@
+body {
+    margin: 100px;
+    
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 article img[data-src] {
     filter: blur(0.2em);
   }
@@ -5,4 +15,5 @@ article img[data-src] {
 article img {
     filter: blur(0em);
     transition: filter 0.5s;
+    margin-top: 10px;
   }
