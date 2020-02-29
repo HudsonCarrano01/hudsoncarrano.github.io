@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script src="js/windchill.js"></script> 
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+        <header>
+            <picture>
+<!--                <source srcset="images/logosmall.png"
+                        media="(max-width: 399px)">
+                <source srcset="images/logomedium.png"
+                        media="(min-width: 400px) and (max-width: 1279px)">
+                <source srcset="images/logolarge.png"
+                        media="(min-width: 1280px)">
+-->                <img src="images/02-raios.png" alt="Logo" >
+            </picture>
+           <div class="header-div">
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='#'>Home</a> </li>
+                <li><a href='preston-6.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li class="active"><a href='stormcenter.html'>Storm Center</a> </li>
+                <li><a href='gallery-7.html'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h2 class="center">Storm Center</h2>
+                <hr>
+            </div>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <div class="infouser">
+                        <div class='form-input'>
+                            <label for="tx_fname">Name: </label> 
+                            <input type='text' name='tx_fname' id='tx_fname'  pattern="[a-z\s]+$" placeholder="Name" required>
+                        </div>
+                        <div class='form-input'>
+                            <label for="tx_email">Email: </label> 
+                            <input type='email' name='tx_email' id='tx_email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  placeholder="user@email.org">
+                        </div>
+                        <div class='form-input'>
+                            <label for="tx_phone">Phone: </label> 
+                            <input type='tel' name='tx_phone' id='tx_phone'  pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"  placeholder="00 0000-0000" required>
+                        </div>
+                        <div class='form-input'>
+                            <label for="tx_zip">Zip Code: </label> 
+                            <input type='text' name='tx_zip' id='tx_zip'  pattern="[0-9]+$" placeholder="00000-000" required>
+                        </div>
+                    </div>    
+                </fieldset>
+                <fieldset  class="infostorm" >
+                    <legend>Storm Information</legend>
+                    <div class='form-input'>
+                        <label for="dt_storm">Storm Date: </label> 
+                        <input type='date' id='dt_storm' name='dt_storm' >
+                    </div>
+                    <div class='form-input'><label >Storm Type: </label>
+                        <input list="listtype" name="st_storm" placeholder="Select List">
+                        <datalist id="listtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </div>
+                    <div class='form-input'>
+                        <label for="ni_severity">Storm Severity: </label> 
+                        <div class="slider-wrapper">
+                            <input class="input-range" type='range' list='tickmarks' name='ni_severity' id='ni_severity'
+                                   min='1' max ="10" step="1" value = "1" 
+                                   oninput="display.value=value" onchange="display.value=value">
+                            <input type="text" id="display" value="1" 
+                                   oninput="ni_severity.value=value" onchange="ni_severity.value=value">       
+                            <datalist id="tickmarks">
+                                <option value="1" label= "1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5" label= "5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10" label= "10">
+                            </datalist>
+                        </div>  
+                    </div>
+                    <div class='form-input'>
+                        <label for="tx_region">Storm Region: </label> 
+                        <select id="tx_region" name='tx_region' >
+                            <option value="">Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Springs">Soda Springs</option>
+                            <option value="Fish">Fish Haven</option>
+                        </select>    
+                    </div>
+                    <div class='form-input '>
+                        <label>Danger Level: </label> 
+                       <fieldset class='radio'>
+                            <legend>Danger Level</legend>
+                            <label class="item-radio"><input type='radio' name='st_danger_level' value="yes" > Yes</label>
+                            <label class="item-radio"><input type='radio' name='st_danger_level' value="maybe"> Maybe</label>
+                            <label class="item-radio"><input type='radio' name='st_danger_level' value="no"> No</label>
+                        </fieldset>
+                    </div>
+                    <div class='form-input'>
+                        <label for="tx_add_info">Additional Information: </label> 
+                        <textarea name='tx_add_info' id='tx_add_info' rows='5'  placeholder='Add information here' ></textarea>
+                    </div>    
+                </fieldset>    
+                <div class='form-input'>
+                    <button type="button" onclick="window.location.href = 'thanks.html'">Submit</button>                    
+                </div>
+
+            </form>
+
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="js/update.js"></script> 
+
+    </body>
+</html>
