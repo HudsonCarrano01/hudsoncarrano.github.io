@@ -58,7 +58,7 @@ footer{
 
 @media only screen and (min-width: 833px) {
     div {
-        grid-template-columns: 1fr 1fr 1fr ; 
+        grid-template-columns: 1fr 1fr  ; 
         
     }
 
