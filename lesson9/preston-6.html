@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/windchill.js"></script> 
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+<!--        <div id="banner" class="banner">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+        </div>
+-->        <header>
+            <picture>
+<!--                <source srcset="images/logosmall.png"
+                        media="(max-width: 399px)">
+                <source srcset="images/logomedium.png"
+                        media="(min-width: 400px) and (max-width: 1279px)">
+                <source srcset="images/logolarge.png"
+                        media="(min-width: 1280px)">
+-->                <img src="images/02-raios.png" alt="Logo" >
+            </picture>
+<!--            <div>          
+                <img id='logo' src='./images/logo.png' alt='logo'>
+            </div>
+ -->           <div class="header-div">
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='index.html'>Home</a> </li>                <li class="active"><a href='Preston-6.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='stormcenter.html'>Storm Center</a> </li>
+                <li><a href='gallery-7.html'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div>
+                <h2 class="center">Preston Town City</h2>
+                <hr>
+            </div>
+            <section class="content">
+                <div class="summary" >
+                    <picture class="rec-img">
+                        <source srcset="images/cit230_image_franklinSmall.jpeg"
+                                media="(max-width: 599px)">
+                        <source srcset="images/cit230_image_franklinMedium.jpeg"
+                                media="(min-width: 600px) and (max-width: 1279px)">
+                        <source srcset="images/cit230_image_franklinLarge.jpeg"
+                                media="(min-width: 1280px)">
+                        <img class="summary-img" src="images/cit230_image_franklin.jpeg" alt="Today weather in Preston" >
+                    </picture>
+                
+            
+                </div>
+                <div class="">
+                    <div >
+                        <div class="p-data">
+                           <h4> Summary Weather </h4>
+                            <p>Currentely: <span id='currently'>Partly cloudy</span></p>
+                            <p>High: <span id='high'>34</span>&deg;F</p>
+                            <p>Wind Chill: <span id='windchill'>27</span>&deg;F</p>
+                            <p>Humidity: <span id='humidity'>27</span>&percnt;</p>
+                            <p>Wind Speed: <span id='windspeed'>0.86</span> mph</p>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="forecast">
+				<div class="grid-title"><h3>5 Day Forecast</h3></div>
+                <div class="forecast-grid">
+                    <div class="day"><span id="d1">Thu</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day"><span id="d2">Fri</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                    <div class="day"><span id="d3">Sat</span><br><img src="images/02-chuva.png" alt="Rain day"></div>
+                    <div class="day"><span id="d4">Sun</span><br><img src="images/02-chuva.png" alt="Sunny day"></div>
+                    <div class="day"><span id="d5">Mon</span><br><img src="images/01-nublado.png" alt="Partly cloudy"></div>
+                </div>
+                <div class="degrees">
+                    <div class="deg">34&deg;F<br>1&deg;C</div>
+                    <div class="deg">32&deg;F<br>0&deg;C</div>
+                    <div class="deg">37&deg;F<br>3&deg;C</div>
+                    <div class="deg">39&deg;F<br>4&deg;C</div>
+                    <div class="deg">25&deg;F<br>-4&deg;C</div>
+                </div>
+            </section>
+            <article class="site-article">
+                <hr>
+                <h3>Preston Breaks Record</h3>
+                <p class="town-article">
+                    <img class="article-img" src="images/preston-03.jpg" alt="Preston city">
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                    Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                </p>
+            </article>
+            <hr>
+            <section class="contact">
+                <div class="summary">
+                    <div class="leftcol-1">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3884.3512149239828!2d-111.875773!3d42.0970234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263%2C%20EUA!5e1!3m2!1spt-BR!2sbr!4v1581157391451!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="rightcol-1">
+                        <h4>The Weather Site</h4>
+                        <p><img src='images/maps-and-flags.png' alt='Address' >30 N 1st E</p>
+                        <p>Preston, ID 83263</p>
+                        <p>&nbsp; </p>
+                        <p><img src='images/telephone.png'  alt='Telephone'>999-999-9999</p>
+                        <p><img src='images/email.png' alt='Email'>theweathersite@tws.com</p>
+                        <p>&nbsp; </p>
+                        <p>
+                           <a href="#"><img src='images/facebook.png' alt='Facebook'></a>
+                           <a href="#"><img src='images/instagram.png' alt='Instagram'></a>
+                           <a href="#"><img src='images/youtube.png' alt='Youtube'></a>
+                           <a href="#"><img src='images/twitter.png' alt='Twitter'></a>
+                           <a href="#"><img src='images/google-plus.png' alt='Google+'></a>
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="js/update.js"></script> 
+    </body>
+</html>
