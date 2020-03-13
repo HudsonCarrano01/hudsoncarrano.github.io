@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/cards-city.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/windchill.js"></script> 
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img src="images/02-raios.png" alt="Logo" >
+            </picture>
+           <div class="header-div">
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li class="active"><a href='index.html'>Home</a> </li>
+                <li><a href='preston-6.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='stormcenter.html'>Storm Center</a> </li>
+                <li><a href='gallery-7.html'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <div>
+                <h2 class="center">Home Page</h2>
+                <hr>
+            </div>
+            <div class = 'towns'>
+                <div class="cardscity"></div>
+            </div>
+
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="js/update.js"></script> 
+        <script src="js/cards-city.js"></script> 
+
+    </body>
+</html>

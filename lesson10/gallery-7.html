@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mills">
+        <meta name="description" content="Assignment portal for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>The Weather Site - BYU-I CIT 230</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&7cNoto+Sans&7cRoboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/windchill.js"></script> 
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+        <header>
+            <picture>
+<!--                <source srcset="images/logosmall.png"
+                        media="(max-width: 399px)">
+                <source srcset="images/logomedium.png"
+                        media="(min-width: 400px) and (max-width: 1279px)">
+                <source srcset="images/logolarge.png"
+                        media="(min-width: 1280px)">
+-->                <img src="images/02-raios.png" alt="Logo" >
+</picture>
+<!--            <div>          
+                <img id='logo' src='./images/logo.png' alt='logo'>
+            </div>
+ -->           <div class="header-div">
+                <h1>The Weather Site</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='index.html'>Home</a> </li>
+                <li><a href='preston-6.html'>Preston Town</a> </li>
+                <li><a href='#'>Soda Springs</a> </li>
+                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='stormcenter.html'>Storm Center</a> </li>
+                <li class="active"><a href='#'>Gallery</a> </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section>
+                <div class='title-gallery'>
+                    <h2>Weather Gallery</h2>
+                </div>
+                <div class="container" >
+                    <figure class="shadow">
+                        <img  src="images/placeholder2.png" data-src="images/weather01-gallery.jpg">
+                        <figcaption>A great storm in sight</figcaption>
+                    </figure>
+                    <figure  class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather02-gallery.jpg">
+                        <figcaption>A sunny day we will have today</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather03-gallery.jpg">
+                        <figcaption>A cold day with a beautiful landscape</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather04-gallery.jpg">
+                        <figcaption>Get ready, a big storm is coming</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather05-gallery.jpg">
+                        <figcaption>Thor is sending his rays, watch out.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather06-gallery.jpg">
+                        <figcaption>Beautiful sunset shows the magnitude of the sky.</figcaption>
+                    </figure>        
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather07-gallery.jpg">
+                        <figcaption>Put on the sweater, today it will snow.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather08-gallery.jpg">
+                        <figcaption>A beautiful rainbow shows that we will have a good time today.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/placeholder2.png" data-src="images/weather09-gallery.jpg">
+                        <figcaption>The sun's rays will be seen today giving us light and warmth.</figcaption>
+                    </figure>        
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            <a href="#">Terms of Use</a>    
+            Last Update: <span id='lastupdate'></span>
+        </footer>
+        <script src="js/loaderimage.js"></script> 
+        <script src="js/update.js"></script> 
+    </body>
+</html>
