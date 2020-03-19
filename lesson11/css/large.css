@@ -1,0 +1,52 @@
+@media only screen and (min-width: 1280px) {
+  /*--------------- SECTION ---------------*/
+  h1 {
+    font-size: 50px;
+    margin: 2.5rem;
+ 
+  }
+  .day {
+      height: 148px;
+      font-size: 1.2rem;
+  }
+  .deg {
+      font-size: 1.2rem;
+  }
+  .summary-img {
+    width: 100%;
+    height: auto;
+  }
+  .rec-img{
+    width: 100%;
+    height: auto;
+    margin : 0; 
+}
+  .p-data {
+    top : 23rem;
+    left: 20rem;
+ }
+
+.container {
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+
+.forecast {
+  margin: 10px auto;
+  margin-left: 22%;
+  align-self: center;
+  font-size: .5rem;
+
+} 
+
+.map iframe {
+  border: 1px solid #4F7CAC;
+  width : 120%;
+  height: 120%;
+}
+
+}
