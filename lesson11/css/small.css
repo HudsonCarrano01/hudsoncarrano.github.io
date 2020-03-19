@@ -160,6 +160,7 @@ section {
     margin: 0;  
     padding: 0;
     clear: both;
+   
 }
 .rightcol-1 {
     display: none;
@@ -209,6 +210,7 @@ section {
     margin: auto;
     padding: 15px;
     clear: both;
+    border-radius: 2rem;
 }
 
 .p-data {
@@ -283,6 +285,7 @@ img {
     width: 96%; 
     height: auto; 
     margin: .5rem;
+    border-radius: 1rem;
 }
 figcaption {
     font-size: smaller;
