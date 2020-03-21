@@ -11,7 +11,7 @@ body {
 hr {
     height: 2px;
     background-color: #4F7CAC !important;
-    margin: 0;
+    margin-bottom: 10px;
     padding: 0;
 }
 h1 {
@@ -243,6 +243,7 @@ section {
     margin: auto;
     padding: 15px;
     clear: both;
+    border-radius: 2remx;
 }
 .p-data {
     position: absolute;
@@ -316,6 +317,7 @@ img {
     width: 96%; 
     height: auto; 
     margin: .5rem;
+    border-radius: 2rem;
 }
 figcaption {
     font-size: smaller;
