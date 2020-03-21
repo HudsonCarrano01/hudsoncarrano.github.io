@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/cards-events.css">
         <script src="js/windchill.js"></script> 
         <script src="js/general.js"></script> 
-        <script src="js/openweatherData.js"></script> 
     </head>
     <body>
         <header>
@@ -32,8 +32,8 @@
                 <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
                 <li><a href='index.html'>Home</a> </li>               
                 <li class="active"><a href='Preston.html'>Preston Town</a> </li>
-                <li><a href='#'>Soda Springs</a> </li>
-                <li><a href='#'>Fish Haven</a> </li>
+                <li><a href='sodasprings.html'>Soda Springs</a> </li>
+                <li><a href='fishhaven.html'>Fish Haven</a> </li>
                 <li><a href='stormcenter.html'>Storm Center</a> </li>
                 <li><a href='gallery.html'>Gallery</a> </li>
             </ul>
@@ -52,7 +52,7 @@
                                 media="(min-width: 600px) and (max-width: 1279px)">
                         <source srcset="images/cit230_image_franklinLarge.jpeg"
                                 media="(min-width: 1280px)">
--->                        <img class="summary-img" src="https://prestonchamber.org/wp-content/uploads/2020/01/preston-idaho-area-chamber-of-commerce-1024x512.jpg" alt="Today weather in Preston" >
+-->                        <img class="summary-img" src="https://prestonchamber.org/wp-content/uploads/2020/01/preston-idaho-area-chamber-of-commerce-1024x512.jpg" alt="Preston" >
                     </picture>
                 </div>
                 <div class="c-pad">
@@ -97,6 +97,15 @@
                 </p>
                 
             </article>
+
+            <section>
+                <hr>
+                <h2 class="center">Events</h2>
+                <div class = 'towns main'>
+                    <div class="cardevent"></div>
+                </div>           
+            </section>
+            
             <section>
                 <hr>
                 <h2 class="center">Contact</h2>
@@ -135,6 +144,7 @@
             <a href="#">Terms of Use</a>    
             Last Update: <span id='lastupdate'></span>
         </footer>
+        <script src="js/openweatherpreston.js"></script> 
         <script src="js/update.js"></script> 
     </body>
 </html>

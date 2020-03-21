@@ -26,11 +26,13 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
     let humidity  = jsObject.main.humidity;
     let windspeed = jsObject.wind.speed;
 
+    let wchill =  35.74 + (0.6215 * temp) - (35.75 * (windspeed ** 0.16)) + ((0.4275 * temp) * (windspeed ** 0.16));  
+
     document.getElementById('temp').textContent = temp.toFixed(1);
     document.getElementById('temp_min').textContent = temp_min.toFixed(1);
     document.getElementById('temp_max').textContent = temp_max.toFixed(1);
     document.getElementById('currently').textContent = currently;
-    document.getElementById('windchill').textContent = windchill.toFixed(1);
+    document.getElementById('windchill').textContent = wchill.toFixed(1);
     document.getElementById('humidity').textContent = humidity;
     document.getElementById('windspeed').textContent = windspeed;
 

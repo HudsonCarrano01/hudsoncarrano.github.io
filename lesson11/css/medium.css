@@ -19,7 +19,7 @@
   }
   /*--------------- HEADER ---------------*/
   header div img{
-    max-width: 50%;
+    max-width: 15%;
     height: auto;
   }
   /*--------------- NAV ---------------*/
@@ -32,6 +32,7 @@
   }
   .navigation li{
     display: flex;
+    font-size: 16px;
   }
   .navigation li a {
     color: #fff;
@@ -71,7 +72,6 @@
   .rightcol-1 map{
     width: 50%;
     margin: 1rem auto;
-    float: center;
   }
   .map iframe {
     border: 1px solid #4F7CAC;
@@ -125,8 +125,8 @@
     float:right;
   } 
   .p-data {
-    top : 23rem;
-    left: 12rem;
+    top : 21rem;
+    left: 13rem;
  }
   .p-data h4 {
     font-size: 22px;
