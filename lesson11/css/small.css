@@ -164,34 +164,26 @@ section {
     padding: 0;
     clear: both;
 }
-.leftcol-1, .rightcol-1 {
+.leftcol-1 {
     padding: 20px;
     max-width: 50%;
 }
 .leftcol-1 {
     text-align: left;
-    display: none;
+    display: block;
 }
 .rightcol-1 {
-    flex: 1;
-    margin-left: 20%;
-    text-align: left;
+    display: none;
     
 }
-.leftcol-1 map{
-    clear: both; 
-    width: 100%;
-    margin: auto;
-    padding: 15px;
-}
-.rightcol-1 p{
+.leftcol-1 p{
     margin: 0;
     padding: 0;
 }
-.rightcol-1 p img{
+.leftcol-1 p img{
     width: 16px;
 }
-.rightcol-1 p a img{
+.leftcol-1 p a img{
     width: 50px;
 }
 .summary-title {
