@@ -1,0 +1,183 @@
+header {
+    h1 {
+        font-size: $h1FontSizeMedium;
+        margin-left: 14rem;
+    }
+    picture img{
+      max-width: 100%;
+    }
+}
+
+nav {
+  margin:0; 
+  padding: 0; 
+  li {
+    font-size: 1.5rem;
+  }
+  li.active {
+    background-color: $navBackColor ;
+  }
+}
+.navigation {
+  display: inline-block;
+  width: 100%;
+  ul {
+    text-align: right;
+  }
+  
+  li:first-child{
+    display:none;
+  }
+  li{
+    display: inline;
+    font-size: 16px;
+    float: right;
+    color: $bodyColor;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    text-align: right;
+    font-size: 1rem;
+  }
+  li a {
+    color: $bodyColor;
+  }
+  a:hover {
+    color: $bodyColor;
+    background-color:  $navColor;
+  }
+  li.active a {
+    color: $bodyColor;
+    background-color: $navColor;
+  }
+  a {
+    display: block;
+    text-align: right;
+  } 
+  picture {
+      margin-top: 3rem;
+  } 
+} 
+main { 
+  figure {
+      float: right; 
+      width: 48%; 
+      margin-left: $gutter;
+      padding-bottom: .5rem;
+  }
+  picture img {
+      margin: 0;
+      padding: 0;
+  }
+}
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
+section {
+  padding: $gutter;
+}
+.forecast {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid ;
+}
+.p-data {
+  flex: 1 auto;
+}
+.five-day {
+  flex: 1 auto;
+}
+#id1, #id2, #id3, #id4, #id5 {
+  display: grid;
+}
+.section-img {
+  width: 33%;
+} 
+
+.summary {
+  flex-direction: row;
+  padding: $gutter;
+}
+.summary-img {
+  width: 100%;
+  height: auto;
+}
+
+.leftcol-1 {
+  display: flex;
+}    
+.leftcol-1 .map{
+  width: 100%;
+  float: left;
+} 
+.rightcol-1 {
+  margin:0 10%;
+}  
+.map iframe {
+  width: 100%;
+  height: 90%;
+}
+
+/* Form CSS */
+  
+.form-input {
+    flex-direction: row;
+    font-size: 18px;
+  label {
+    flex-basis: 9rem; 
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+  input,
+  select,
+  textarea {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+  }
+  button {
+      height: 40px;
+      width: 20%;
+      margin-left: auto;
+  }
+}  
+input {
+    height: 35px;
+}
+.guides div {
+  grid-template-columns: 1fr 1fr; 
+}
+.cardsguides {
+  margin: 0;
+  padding: 0;
+  section {
+    margin-left : $gutter;
+    margin-bottom: $gutter;
+  }
+}
+
+
+.article-img {
+  width: 50%;
+  float:right;
+  border-radius: 2rem;
+} 
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #DD1C1A
+}
+
+.msg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #07a0c3;
+}
+
+table {
+  font-size: 1.5rem;
+}  
+

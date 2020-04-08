@@ -1,0 +1,41 @@
+
+header, nav, main, footer, picture {
+    max-width: 1200px;
+    margin:auto;
+}
+header {
+    picture img{
+        max-width: 100%;
+    }
+    h1 {
+        font-size: $h1FontSizeLarge;
+    }
+}
+nav a {
+    padding: .5rem 1rem;
+}
+
+main {
+    figure { 
+        width: 31%;
+    }
+
+    picture img{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+.navigation {
+    picture {
+        margin-top: 0rem;
+    }
+    li {
+        font-size: 1.4rem;
+    }
+}
+.guides div {
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+       
+    

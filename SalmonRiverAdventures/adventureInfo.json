@@ -1,0 +1,43 @@
+
+  var activity=[
+      {
+        "title": "2 Day Rafting and Overnight Beach Vacation",
+        "subtitle": "2 Day Salmon River Overnight Beach Rafting Trip",
+        "price": "$435.00 Adult - 345.00 Youth / person",
+        "duration": "2 Day Overnight Raft Trip",
+        "description": "A premier rafting trip that fits into a tight schedule, the Main Salmon River offers great whitewater, hiking, hot springs and of course big beautiful beaches. This adventure has the perfect combination of a wilderness escape the first day and exciting whitewater the second. While enjoying the solitude and beauty of this canyon we often see Big Horn Sheep, Elk, Deer, and Eagles. This is a great adventure for young families with our deluxe river camps and various activities that our guides will help you enjoy. We cater this trip for all types of groups and skill sets; whether you are looking for a romantic weekend getaway or just a fun adventure vacation with your friends and family this trip is perfect. This adventure takes you through a spectacular section of the Salmon River Canyon, the 2nd deepest in North America. You will experience Granite rock walls, stately Pines and native wild flowers in this beautiful semi arid canyon land. Hiking, hot spring and fishing; you might enjoy a short hike to historic sites or impressive views of this beautiful canyon. Many of our guests enjoy soaking in a hot spring dug out of a log or explore a cave with hot water flowing through. Our guides will help those interested in fishing putting you or your family on some great fighting small mouth bass or trout. ",
+        "message1": "Exciting and Fun Whitewater",
+        "message2": "Camping on the Beach",
+        "message3": "Hot Spring and Hiking",
+        "message4": "Great for Families",
+        "imageurl": "rafting-action01.jpg",
+        "souce": "https://idahoriverguides.com/river/riggins-idaho-rafting/"
+      },
+      {
+        "title": "Half Day Trip | Salmon River White Water Rafting",
+        "subtitle": "1/2 Day Whitewater Rafting - Fun for the Whole Family",
+        "price": "$79.00 Adult - 59.00 Youth / person",
+        "duration": "Half Day Whitewater Rafting Trip",
+        "description": "Journey down one of the most popular whitewater rafting trips on the famous Salmon River. Our experienced guides will take you through exhilarating rapids such as Time Zone, Tight Squeeze, Black Rock, Ladder and more. You also have time to relax and swim, plus we have drinks, snacks and Brenda's famous cookies. Most trips stop on a beach to enjoy the warm sand and water or hear about the history of the canyon at an interpretive site. With Mountain River Outfitters you can choose your level of excitement and involvement in our different river craft. Choose from the best stern mounted paddle rafts, inflatable kayaks, oar boats or paddle raft. A fun filled 10 mile Riggins Idaho rafting trip that is great for putting a little more excitement into your summer. Take a great adventure that fits into a tight schedule for anyone looking for an action packed 4 hour raft trip your whole family will love. Fun river games and exciting white water of the Main Salmon River will surely leave you with a smile on your face.",
+        "message1": "Exciting Whitewater",
+        "message2": "Fun For the Whole Family",
+        "message3": "Morning and Afternoon Trips",
+        "message4": "",
+        "imageurl": "rafting-action02.jpg",
+        "souce": "https://idahoriverguides.com/river/riggins-idaho-rafting/"
+      },
+      {
+        "title": "1 Day Trip | Salmon River Rafting",
+        "subtitle": "Full Day White Water Rafting Trip Salmon River",
+        "price": "$109.00 Adult - $89.00 Youth / person",
+        "duration": "Full Day Salmon River Rafting Trip ",
+        "description": "Enjoy a fun filled 20 miles of white water, swimming, water fighting, or hearing about river lore and history of the Salmon River. Experience a fun and exciting day with your friends and family with one of our knowledgeable guides. Your journey begins with a beautiful van or bus ride up the river corridor to Spring Bar where you will launch onto one of the most popular rafting stretches of the famous Salmon River. You will experience such rapids as Ruby, Lake Creek, Time Zone, Trap, Ladder and more. You will have plenty of time to relax on a white sand beach and swim or play a game of Frisbee while you savor our delicious riverside cuisine. Riggins is Idaho's white water capital is nestled between the Seven Devil Mountains and the Gospel Hump and Frank Church Wilderness area's. The serenity of the canyon and the thrill of the whitewater makes this a fun filled family adventure. MRO offers the best Idaho rafting trips for all experience levels we will customize a trip that is right for you and your family. The thrill of running the whitewater with our professional rafting guides will create a summer adventure everyone will love.",
+        "message1": "Exciting and Fun Whitewater",
+        "message2": "Gourmet Riverside Beach Lunch",
+        "message3": "Experience 20 Miles of the Salmon River",
+        "message4": "",
+        "imageurl": "rafting-action03.jpg",
+        "souce": "https://idahoriverguides.com/river/riggins-idaho-rafting/"
+      }
+    ];
+             

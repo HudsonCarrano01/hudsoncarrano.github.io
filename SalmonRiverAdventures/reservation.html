@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hudson Carrano Filho">
+        <meta name="description" content="Final Project for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>Salmon River Adventures</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="Logo" >
+            </picture>
+            <div>
+                <h1>Salmon River Adventures</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href='contact.html'>Contact Us</a> </li>
+                <li class="active"><a href='reservation.html'>Reservation</a> </li>
+                <li><a href='riverguide.html'>Rive Guide</a> </li>
+                <li><a href='adventure.html'>Adventures</a> </li>
+                <li><a href='index.html'>Home</a> </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <picture class="p-img">
+                <img src="images/raft03-s.png" alt="Raft Place" >
+            </picture> 
+            <div>
+                <h2>Reservation</h2>
+                <hr>
+            </div>
+            <div>
+                <table class='tablemain'>
+                    <thead>
+                        <tr>    
+                           <th colspan="6">Adventures</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>#</th>
+                            <th>Adventure</th>
+                            <th>Lenght</th>
+                            <th>Skil Level</th>
+                            <th>Cost</th>
+                            <th>When</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2 Day Rafting and Overnight Beach Vacation</td>
+                            <td>2 Day</td>
+                            <td>Hard</td>
+                            <td>$435.00 Adult - 345.00 Youth / person</td>
+                            <td>September, October or November</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1 Day Trip | Salmon River Rafting</td>
+                            <td>1 Day</td>
+                            <td>Medium</td>
+                            <td>$109.00 Adult - 89.00 Youth / person</td>
+                            <td>September, October or November</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Half Day Trip | Salmon River White Water Rafting</td>
+                            <td>1/2 Day</td>
+                            <td>Easy</td>
+                            <td>$79.00 Adult - 59.00 Youth / person</td>
+                            <td>September, October or November</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="6">Do It Your Rerservation</th>
+                        </tr>    
+                    </tfoot>
+                </table>    
+            </div>
+
+            <div class = 'forms'>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>User Information</legend>
+                        <div class="infouser">
+                            <div class='form-input'>
+                                <label for="tx_fname">Name: </label> 
+                                <input type='text' name='tx_fname' id='tx_fname'  pattern="[a-z\s]+$" placeholder="Name" required>
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_email">Email: </label> 
+                                <input type='email' name='tx_email' id='tx_email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  placeholder="user@email.org">
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_phone">Phone: </label> 
+                                <input type='tel' name='tx_phone' id='tx_phone'  pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"  placeholder="00 0000-0000" required>
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_adventura">Adventure: </label> 
+                                <select id="tx_adventura" name='tx_adventura' >
+                                    <option value="">Select Adventure</option>
+                                    <option value="1">2 Day Rafting and Overnight Beach Vacation</option>
+                                    <option value="2">1 Day Trip | Salmon River Rafting</option>
+                                    <option value="3">Half Day Trip | Salmon River White Water Rafting</option>
+                                </select>    
+                            </div>
+                            <div class='form-input '>
+                                <label>Month : </label> 
+                               <fieldset class='radio'>
+                                    <legend>Danger Level</legend>
+                                    <label class="item-radio"><input type='radio' name='month' value="september" > September</label>
+                                    <label class="item-radio"><input type='radio' name='month' value="october"> October</label>
+                                    <label class="item-radio"><input type='radio' name='month' value="november"> November</label>
+                                </fieldset>
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_add_info">Additional Information: </label> 
+                                <textarea name='tx_add_info' id='tx_add_info' rows='5'  placeholder='Add information here' ></textarea>
+                            </div>  
+                        </div>    
+                    </fieldset>
+                    <div class='form-input'>
+                        <button type="button" > Submit</button>                    
+                    </div>
+    
+                </form>
+    
+            </div>
+
+        </main>
+        <footer>
+            <p><img class='indent' src="images/maps-and-flags.png" alt="Address"> 1000 S Main St, Riggins, ID</p>
+            <p><img class='indent' src="images/telephone.png" alt="Telephone"> 999-999-9999</p>
+            <p><img class='indent' src="images/email.png" alt="Email"> contact@adventure.com</p>
+            <p>&nbsp; </p>
+
+            <p>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/google-plus.png" alt="Google+"></a>
+             </p>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            Last Update: <span id='lastupdate'></span>
+
+        </footer>
+        <script src="js/update.js"></script> 
+        <script src="js/cards-city.js"></script> 
+
+    </body>
+</html>

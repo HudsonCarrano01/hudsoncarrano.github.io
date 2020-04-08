@@ -1,0 +1,44 @@
+
+  var guide=[
+      {
+        "name": "Peter Smith",
+        "image": "petersmith.png",
+        "level": "Graduated from the University of Idaho with a degree in Natural Resources Management",
+        "yearsexp": "15 years experience guiding",
+        "email": "psmith9999@gmailcom ",
+        "biography": "Peter is a great fly fisherman and an incredible storyteller. After working for a few years in Natural Resources, he now spends most of his time climbing, fishing, rafting, and working as a ski instructor at Snowbird in the winter.",
+      },
+      {
+        "name": "Mary Smile",
+        "image": "marysmile.png",
+        "level": "Graduated from the University of Idaho with a degree in Natural Resources Management",
+        "yearsexp": "11th year guiding on the Salmon and Snake rivers",
+        "email": "marysmile9999@gmailcom ",
+        "biography": "Mary is a great rafting experience and we are lucky to have her. Heather has a great attitude and a love for the outdoors. Her laugh is contagious and she seems to make everyone around her have more fun. ",
+      },
+      {
+        "name": "Tony Spencer",
+        "image": "tonyspencer.png",
+        "level": "Graduated from the University of Idaho",
+        "yearsexp": "He has been guiding for 6 years",
+        "email": "tonyspencer9999@gmailcom ",
+        "biography": "Tony is an unmatched love for Idaho’s rivers, history, and beauty gives guests a unique perspective on how special the Idaho Wilderness is. He’s an Idaho native, raised on the Salmon River. He spends most of his free time with his wife, camera, dog, and drift boat. ",
+      },
+      {
+        "name": "Jordan Tracer",
+        "image": "jordantracer.png",
+        "level": "Graduated from the University of Idaho",
+        "yearsexp": "She has 5 years of experience in rafting and guiding",
+        "email": "jordantracer9999@gmailcom ",
+        "biography": "Jordan, although very young, was born practicing water sports. She has won several rafting championships. Now she is one of our most excited guides on great adventures. ",
+      },
+      {
+        "name": "Jackson Todd",
+        "image": "jacksontodd.png",
+        "level": "Graduated from the University of Idaho",
+        "yearsexp": "He has over 15 years of experience guiding and trip leading",
+        "email": "jtodd9999@gmailcom ",
+        "biography": "Jackson grew up rafting. He is an elementary school teacher in the off-season and a proud father. His knowledge about the river and its history leaves every guest with a deep appreciation for whichever canyon they are rafting through.  ",
+      },
+    ];
+             

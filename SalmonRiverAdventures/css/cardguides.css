@@ -1,0 +1,84 @@
+
+.guides div {
+    display: grid;
+    grid-template-columns: 1fr; 
+    width: 100%;
+} 
+.motto {
+    margin-bottom: 3rem;
+}
+section {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+    max-width: 25rem;
+    background-color: #ddb955;
+    color: #5379ca ;
+}
+section p {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-right: 0;
+}
+
+.cardguide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ 
+
+    span {
+        display: Flex;
+        font-weight: bold;
+        margin: 0;
+    }
+    h2 {
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+    img {
+        display: block;
+        width: 50%;
+        margin-top: 1rem;
+    }
+}
+.pdados {
+    display: inline;
+    padding: 0;
+    margin-left: 0;
+
+}
+
+
+
+.img-city {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+@media only screen and (min-width: 833px) {
+     
+    
+    .guides div {
+        grid-template-columns: 1fr 1fr  ; 
+        
+    }
+
+
+}  
+
+@media only screen and (min-width: 1280px) {
+    
+    
+    .guides div {
+        grid-template-columns: 1fr 1fr 1fr; 
+        
+    }
+}

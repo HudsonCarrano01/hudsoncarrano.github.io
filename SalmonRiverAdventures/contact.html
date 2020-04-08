@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <!-- Assignment CIT 230 - Hudson Carrano -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hudson Carrano Filho">
+        <meta name="description" content="Final Project for Hudson Carrano
+        in CIT 230: Web Frontend Development at BYU-Idaho.">
+        <title>Salmon River Adventures</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/general.js"></script> 
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="Logo" >
+            </picture>
+            <div>
+                <h1>Salmon River Adventures</h1>
+            </div>    
+        </header>
+
+        <nav>
+            <ul class="navigation" >
+                <li><a href='#' onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li class="active"><a href='contact.html'>Contact Us</a> </li>
+                <li><a href='reservation.html'>Reservation</a> </li>
+                <li><a href='riverguide.html'>Rive Guide</a> </li>
+                <li><a href='adventure.html'>Adventures</a> </li>
+                <li><a href='index.html'>Home</a> </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <picture class="p-img">
+                <img src="images/raft04-s.png" alt="Raft Place" >
+            </picture> 
+            <div>
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <div class = 'contact'>
+                <fieldset>
+                    <form method="get" action="#">
+                    
+                        <div class="infouser">
+                            <div class='form-input'>
+                                <label for="tx_fname">Name: </label>
+                                <input type='text' name='tx_fname' id='tx_fname'  pattern="[a-z\s]+$" placeholder="Name" required>
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_email">Email: </label> 
+                                <input type='email' name='tx_email' id='tx_email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  placeholder="user@email.org" required>
+                            </div>
+                            <div class='form-input'>
+                                <label for="tx_add_info">Additional Information: </label> 
+                                <textarea name='tx_add_info' id='tx_add_info' rows='5'  placeholder='Add information here' ></textarea>
+                            </div>    
+                        </div>    
+                        <div class='form-input'>
+                            <button type="button">Submit</button>                    
+                        </div>
+                    </form>
+                </fieldset>
+                <hr>
+            </div>
+            
+            <section >
+                <div class="summary">
+                  
+                    <div class="leftcol-1">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.6848518869815!2d-116.3198842843058!3d45.417907544551966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549%2C%20EUA!5e1!3m2!1spt-BR!2sbr!4v1585993502776!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    </div>
+                
+                
+                    <div class="rightcol-1">
+                        <h4>Rafting Adventure</h4>
+                        <p><img src='images/maps-and-flags.png' width='16px'>1000 S Main St</p>
+                        <p>Riggins, ID 83549</p>
+                        <p><img src='images/telephone.png' width='16px'>999-999-9999</p>
+                        <p><img src='images/email.png' width='16px'>contact@raftingadventure.com</p>
+                        <p>&nbsp; </p>
+                    </div>
+                </div>
+                <hr>
+            </section>
+
+        </main>
+        <footer>
+            <p><img class='indent' src="images/maps-and-flags.png" alt="Address"> 1000 S Main St, Riggins, ID</p>
+            <p><img class='indent' src="images/telephone.png" alt="Telephone"> 999-999-9999</p>
+            <p><img class='indent' src="images/email.png" alt="Email"> contact@adventure.com</p>
+            <p>&nbsp; </p>
+
+            <p>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/google-plus.png" alt="Google+"></a>
+             </p>
+            <h3> &copy; 2020| Hudson Carrano | Brasília - Brasil | BYUI Online Learning </h3>
+            Last Update: <span id='lastupdate'></span>
+
+        </footer>
+
+    </body>
+</html>

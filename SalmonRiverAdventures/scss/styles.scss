@@ -1,0 +1,40 @@
+@import "normalize";
+
+@import "variables";
+
+@import "small";
+
+@media all and (min-width: 500px){
+   
+    .form-input label {
+        display: block;
+        color: #4F7CAC;
+    }
+    .form-input button {
+        margin: 1rem ;
+    }
+
+    .slider-wrapper {
+        width: 70%;
+        height: auto;
+        padding: 10px; 
+        border: 1px solid #ddd; color: #555; 
+    }  
+    form legend {
+        font-size: 1.5rem;
+    }
+    form fieldset {
+        margin: 1.4rem ;
+    }    
+    
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    @import "medium";
+} /* end of media query */
+
+@media only screen and (min-width: 1028px) {
+    @import "large";
+} /* end of media query */

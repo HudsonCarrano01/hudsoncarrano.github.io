@@ -1,17 +1,33 @@
 const mykey = '405d4b505720c13a42fdc37b8b076c13';
-//const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID="+ mykey;
 
-  window.onload = function() {
-    weatherInform( 5604473 );
-  }
 
-  function weatherInform( cityID ) {
+    weatherInformCoord( 34.0507, -88.2528 );
+
+    // Data sumary 
+    var p_currently = '';
+    var p_high = 0;
+    var p_humidity = 0;
+    var p_windspeed = 0; 
+    var p_windchill = windchill(p_high, p_windspeed);
+
+    const currwntly = document.getElementById("currently");
+    if (currwntly !== null) {
+        document.getElementById("currently").innerHTML = p_currently;
+        document.getElementById("temp").innerHTML      = p_high;
+        document.getElementById("humidity").innerHTML  = p_humidity;
+        document.getElementById("windspeed").innerHTML = p_windspeed;
+        document.getElementById("windchill").innerHTML = p_windchill; 
+
+    }
+
+
+function weatherInformCoord( lat, lon ) {
      
-    fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + mykey)
+    fetch('https://api.openweathermap.org/data/2.5/weather?appid=' + mykey + '&lat='+ lat + '&lon='+lon)
     .then((response) => response.json())
     .then((jsObject) => {
     console.log(jsObject);
-     
+
     let C = jsObject.main.temp - 273;
     let temp = (1.8 * C) + 32;  
     let C_min = jsObject.main.temp_min - 273;
@@ -36,13 +52,10 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
     document.getElementById('humidity').textContent = humidity;
     document.getElementById('windspeed').textContent = windspeed;
 
-
-
-    fetch('https://api.openweathermap.org/data/2.5/forecast?id=' + cityID+ '&appid=' + mykey )
+    fetch('https://api.openweathermap.org/data/2.5/forecast?appid=' + mykey + '&lat=' + lat + '&lon=' + lon )
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-
 
         var i = 0;
         var k = 0;
@@ -55,10 +68,8 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
             var dtime = jsObject.list[i].dt_txt;
             if (dtime.includes('18:00:00')) {      
                 a[k] = i;
-                
                 date = new Date(dtime);
                 w[k] = date.toLocaleDateString('en-US', wo);
-
                 k++
             };
             i++
@@ -69,7 +80,7 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
             let cdd3 = jsObject.list[a[k+2]].main.temp - 273;
             let cdd4 = jsObject.list[a[k+3]].main.temp - 273;
             let cdd5 = jsObject.list[a[k+4]].main.temp - 273;
-                    
+              
             let d1 = w[k];
             let d2 = w[k+1];
             let d3 = w[k+2];
@@ -83,8 +94,6 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
             let dd4 = (1.8 * cdd4) + 32;  
             let dd5 = (1.8 * cdd5) + 32;  
             
-
-
             const imgDirSrc = 'https://openweathermap.org/img/w/';
             
             let id1 = imgDirSrc + jsObject.list[a[k]].weather[0].icon + '.png'; 
@@ -120,9 +129,19 @@ const mykey = '405d4b505720c13a42fdc37b8b076c13';
             document.getElementById('d3').textContent = d3;
             document.getElementById('d4').textContent = d4;
             document.getElementById('d5').textContent = d5;
-
       });
-    
     });
  }
 
+ // Function to use in nav menu
+function windchill (tempF, speed) {
+    let wdchill;
+    if((tempF != null) & (speed != null)){
+        wdchill = 35.74 + (0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16));
+        wdchill = wdchill.toFixed(1);
+        wdchill = Math.round(wdchill);
+    }else{
+        wdchill = 'N/A';
+    }    
+    return wdchill;
+ }   
